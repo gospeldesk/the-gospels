@@ -1,3 +1,9 @@
 This is an edition of the four gospels, using the public domain WEB
 translation. I use a Python script to pre-process the WEB HTML version, and
-then I use Prince (http://www.princexml.com/) to go from HTML/CSS to PDF.
+then I use Prince (http://www.princexml.com/) to go from HTML/CSS to PDF. The
+OSX version of Prince is bundled, so if you clone/download this repo on OSX,
+you should be able to run `make` inside it and it will regenerate gospels.pdf
+(though it will be up to date when you first check it out).
+
+One issue is that I'm using Adobe Caslon Pro (bundled here), which is a
+non-free font.
