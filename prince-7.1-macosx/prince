@@ -1,0 +1,3 @@
+#! /bin/sh
+
+exec /Users/whit537/personal/xmin.org/__/lib/prince/bin/prince --prefix="/Users/whit537/personal/xmin.org/__/lib/prince" "$@"

@@ -1,0 +1,288 @@
+/* tabs.css is auto-generated during `make` */
+@import url("tabs.css");
+
+
+/* http://store1.adobe.com/cfusion/store/html/index.cfm?store=OLS-US&event=displayFontPackage&code=1712 */
+@font-face {
+    font-family: "Adobe Caslon Pro";
+    font-style: normal;
+    font-weight: normal;
+    src: url("fonts/ACaslonPro-Regular.otf");
+}
+
+@font-face {
+    font-family: "Adobe Caslon Pro";
+    font-style: normal;
+    font-weight: bold;
+    src: url("fonts/ACaslonPro-Semibold.otf");
+}
+
+@font-face {
+    font-family: "Adobe Caslon Pro";
+    font-style: italic;
+    font-weight: normal;
+    src: url("fonts/ACaslonPro-Italic.otf");
+}
+
+
+@page {
+    size: 6.25in 9.25in;
+    margin: 1.125in;
+    margin-inside: 1.375in;
+    padding: 0;
+}
+
+@page:left {
+    @bottom-right { 
+        content: string(book);
+        font: italic 8pt/8pt "Adobe Caslon Pro";
+    }
+    @bottom-left {
+        font: normal 8pt/8pt "Adobe Caslon Pro";
+        content: counter(page);
+    }
+}
+@page:right {
+    @bottom-left { 
+        content: "Section " counter(section, upper-alpha);
+        font: italic 8pt/8pt "Adobe Caslon Pro";
+    }
+    @bottom-right {
+        font: normal 8pt/8pt "Adobe Caslon Pro";
+        content: counter(page);
+    }
+}
+
+
+/* Page Tabs, Bleed */
+/* ================ */
+
+#Mark { page: Mark; }
+#Matthew { page: Matthew; }
+#Luke { page: Luke; }
+#John { page: John; }
+
+
+#MarkTabHack { flow: static(MarkTabHack); }
+@page Mark:left { @top { content: flow(MarkTabHack); } }
+
+#MatthewTabHack { flow: static(MatthewTabHack); }
+@page Matthew:left { @top { content: flow(MatthewTabHack); } }
+
+#LukeTabHack { flow: static(LukeTabHack); }
+@page Luke:left { @top { content: flow(LukeTabHack); } }
+
+#JohnTabHack { flow: static(JohnTabHack); }
+@page John:left { @top { content: flow(JohnTabHack); } }
+
+
+#MarkTab { flow: static(MarkTab); }
+@page Mark:right { @top { content: flow(MarkTab); } }
+
+#MatthewTab { flow: static(MatthewTab); }
+@page Matthew:right { @top { content: flow(MatthewTab); } }
+
+#LukeTab { flow: static(LukeTab); }
+@page Luke:right { @top { content: flow(LukeTab); } }
+
+#JohnTab { flow: static(JohnTab); }
+@page John:right { @top { content: flow(JohnTab); } }
+
+
+.Tab SPAN {
+    display: block; 
+    position: absolute;
+    width: 0.375in;
+    right: -1.125in;
+    margin: 0;
+    padding: 0;
+    background: black;
+}
+
+.TabHack SPAN {
+    /* This covers up the numbers on left pages. */
+    display: block; 
+    margin: 0;
+    padding: 0;
+    background: white;
+    height: 9.25in;
+    width: 0.2in;
+    position: absolute;
+    top: -1.125in;
+    right: -0.75in;
+}
+
+
+BODY {
+    font: normal 10pt/13.333pt "Adobe Caslon Pro";
+}
+
+H1 {
+    font: bold 14pt/14pt "Adobe Caslon Pro";
+    text-align: center;
+    margin: 1.75in 0;
+    padding: 0;
+    page-break-before: right;
+    display: block;
+    prince-bookmark-level: 1;
+    string-set: book content();
+    age: newbook;
+}
+#MarkTabHack {
+    counter-reset: page;
+}
+H2 {
+    font: bold 12pt/12pt "Adobe Caslon Pro";
+    text-align: center;
+    margin: 1in 0 0.5in;
+    padding: 0;
+    page-break-before: always;
+    display: block;
+    prince-bookmark-level: 2;
+    age: newsection; /* this isn't working to suppress headers on the first
+                        page of each section */
+}
+.book {
+    counter-reset: section;
+}
+.ook P:first-of-type::first-letter {
+    /* not working -- because first-letter is matching the chapter number */
+    /* almost always. in mark there's a section break mid-verse */
+    float: left;
+    font-size: 24pt;
+    font-weight: bold;
+}
+.book P:first-of-type {
+    text-indent: 0;
+}
+
+A {
+    color: black;
+    text-decoration: none;
+}
+
+SPAN.chapter, SPAN.verse {
+    display: inline-block; /* doesn't work for triggering z-index */
+    float: inside;
+    margin-inside: -0.75in;
+    width: 0.5in; /* this interacts with margin-inside */
+    height: 13.333pt;
+    text-align: outside;
+    text-indent: 0;
+}
+SPAN.chapter SPAN, SPAN.verse SPAN {
+    /* not working */
+    position: relative;
+    z-index: 10000000;
+}
+
+SPAN.chapter {
+    font: bold 8pt/13.333pt "Adobe Caslon Pro";
+    counter-increment: chapter;
+}
+SPAN.verse {
+    font: italic 8pt/13.333pt "Adobe Caslon Pro";
+    background: white;
+}
+SPAN.verse.newline { background: #F1AEF9; }
+SPAN.verse.range { background: #FFFE98; }
+SPAN.tab-chapter {
+    font: bold 8pt/8pt "Adobe Caslon Pro";
+    display: inline-block;
+    position: absolute;
+    right: -0.7in;
+    /* top: -1.125in; set in tabs.css (auto-generated) */
+    height: 8pt;
+    width: 0.25in;
+    background: white;
+    text-align: right;
+}
+
+DIV.section {
+    counter-increment: section;
+}
+
+
+P {
+    display: block;
+    margin: 0;
+    padding: 0;
+    text-indent: 1em;
+    text-align: justify;
+    /*
+    prince-hyphens: auto;
+    prince-hyphenate-patterns: url("prince-7.1-macosx/lib/prince/hyph/en.hyp");
+    looks junky: Mt 3:3
+    */
+}
+
+DL {
+    margin: 0;
+    padding: 1em 2em;
+    display: block;
+}
+DT {
+    margin: 0;
+    font-weight: normal;
+    display: block;
+
+    /* This is for Matthew 5:6,10 */
+    /* But it breaks Matthew 2 */
+    /*
+    padding: 0 0 0 2em;
+    text-indent: -2em;  
+    */
+}
+DD {
+    margin: 0;
+    padding: 0 0 0 1em;
+    display: block;
+}
+.newline {
+    margin-top: 13.333pt;
+}
+
+DT SPAN.chapter, DT SPAN.verse {
+    /* I found somewhere via Google that 0.166044in == 1em at 12pt.
+       so that is 0.13837in at 10pt
+       */
+    margin-inside: -1.02674in;  /* == 0.65in + (2em @ 10pt) */
+    order-bottom: 1px solid green;
+}
+
+DD SPAN.chapter, DD SPAN.verse {
+    /* e.g., Matthew 12:21 */
+    margin-inside: -1.16511in;  /* == 0.65in + (3em @ 10pt) */
+    order-bottom: 1px solid blue;
+}
+
+.unorphan {
+    page-break-before: always;
+}
+.poetry-linewrap {
+    padding-left: 2em;
+    background: #FFD29A;
+}
+
+
+#Luke .v1-68 {
+    page-break: before;
+}
+#Luke .v1-48,
+#Luke .v1-71,
+#Luke .v1-77,
+#Luke .v1-79 {
+    margin-inside: -1.314in;    /* == 0.65in + (4em @ 10pt) */
+    ackground: #9BFDED ! important;
+}
+#Luke .v1-75 {
+    margin-inside: -1.445in;    /* == 0.65in + (6em @ 10pt) + total_fudge */
+    ackground: #9BFDED ! important;
+}
+#Luke .v1-50,
+#Luke .v1-55,
+#Luke .v4-19,
+#Luke .v20-43 {
+    margin-inside: -1.02674in;  /* == 0.65in + (2em @ 10pt) */
+    ackground: #9BFDED ! important;
+}

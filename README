@@ -1,0 +1,3 @@
+This is an edition of the four gospels, using the public domain WEB
+translation. I use a Python script to pre-process the WEB HTML version, and
+then I use Prince (http://www.princexml.com/) to go from HTML/CSS to PDF.

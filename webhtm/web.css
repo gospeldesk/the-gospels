@@ -1,0 +1,10 @@
+/* Style sheet for the World English Bible. http://WorldEnglishBible.org/ */
+DIV.csswarning { display: none } /* For "CSS disabled" message in HTML file */
+body {margin: 1em}
+h1 {text-indent: 0}
+h2 {text-indent: 0}
+/* p.h {text-indent: -3em; margin-left: 4em} /* Hebrew style poetry */
+/* p.p {text-indent: 3em; margin-left: 1em} /* Prose */
+a.cv {font-size: smaller; color: blue; vertical-align: top} /* Chapter-verse marker */
+span.j {display: inline; color: red} /* Quotation of Jesus */
+span.b {display: inline; color: black}
