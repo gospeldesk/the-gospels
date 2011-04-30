@@ -122,7 +122,8 @@ class VerseReplacer:
                 return ''
             previous = str(int(verse) - 1)
             previous = ''.join(['&#x%s;' % tnum[int(d)] for d in previous])
-            verse_tnum = previous + '&ndash;' + verse_tnum
+            verse_tnum = previous + '&nbsp;&nbsp;' + verse_tnum
+                                    # double nbsp turns into a long space
             css_class += ' range'
         r = (chapter, chapter, chapter, verse, css_class, verse, verse_tnum)
         return ('<SPAN class="tab-chapter c%s">%s</SPAN><SPAN '

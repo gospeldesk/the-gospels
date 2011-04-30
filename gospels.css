@@ -177,15 +177,15 @@ SPAN.chapter SPAN, SPAN.verse SPAN {
 }
 
 SPAN.chapter {
-    font: bold 8pt/13.333pt "Adobe Caslon Pro";
+    font: bold 11pt/13.333pt "Adobe Caslon Pro";
     counter-increment: chapter;
 }
 SPAN.verse {
-    font: italic 8pt/13.333pt "Adobe Caslon Pro";
+    font: normal 8pt/13.333pt "Adobe Caslon Pro";
     background: white;
 }
-SPAN.verse.newline { background: #F1AEF9; }
-SPAN.verse.range { background: #FFFE98; }
+SPAN.verse.newline { ackground: #F1AEF9; }
+SPAN.verse.range { ackground: #FFFE98; }
 SPAN.tab-chapter {
     font: bold 8pt/8pt "Adobe Caslon Pro";
     display: inline-block;
@@ -261,7 +261,7 @@ DD SPAN.chapter, DD SPAN.verse {
 }
 .poetry-linewrap {
     padding-left: 2em;
-    background: #FFD29A;
+    ackground: #FFD29A;
 }
 
 
