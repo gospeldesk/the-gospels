@@ -135,11 +135,15 @@ class VerseReplacer:
 htm = pat.sub(VerseReplacer(), htm)
 
 # Dashes and Smart Quotes
+htm = htm.replace('Yes\xe2\x80\x99', 'Yes') # special case
 assert 'CHEESE' not in htm
 pat = re.compile('\xe2\x80\x99([a-z])')
 htm, n = pat.subn(r'CHEESE\1', htm)
-#print n, "apostrophes saved from certain death"
-# TODO: Jesus' apostrophes
+print n, "apostrophes saved from certain death"
+pat = re.compile('s\xe2\x80\x99(\\s)', re.DOTALL)
+htm, n = pat.subn(r'sCHEESE\1', htm)
+print n, "more apostrophes saved from certain death"
+htm = htm.replace('s\xe2\x80\x99', 'sCHEESE') #'&rsquo;')
 htm = htm.replace('\xe2\x80\x94', '&mdash;')
 htm = htm.replace('\xe2\x80\x98', '') #'&lsquo;')
 htm = htm.replace('\xe2\x80\x99', '') #'&rsquo;')

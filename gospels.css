@@ -118,7 +118,7 @@ BODY {
 }
 
 H1 {
-    font: bold 14pt/14pt "Adobe Caslon Pro";
+    font: normal 14pt/14pt "Adobe Caslon Pro";
     text-align: center;
     margin: 1.75in 0;
     padding: 0;
@@ -132,7 +132,7 @@ H1 {
     counter-reset: page;
 }
 H2 {
-    font: bold 12pt/12pt "Adobe Caslon Pro";
+    font: normal 12pt/12pt "Adobe Caslon Pro";
     text-align: center;
     margin: 1in 0 0.5in;
     padding: 0;
