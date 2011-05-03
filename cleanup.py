@@ -6,8 +6,11 @@ import string
 
 def bail(htm):
     open('gospels.htm', 'w+').write(htm)
-    raise SystemExit
+    raise SystemExit(1)
 
+def fail(msg):
+    print msg
+    raise SystemExit(1)
 
 htm = open("gospels.raw.htm").read()
 
@@ -149,7 +152,7 @@ pat = re.compile(r'<h1>\nThe Good News According to (.*)\n</h1>')
 htm = pat.sub(r'</div></div><div id="\1" class="book">'
               r'<div id="\1TabHack" class="TabHack"><span></span></div>'
               r'<div id="\1Tab" class="Tab"><span></span></div>'
-              r'<h1>\1</h1><div class="section A">', htm)
+              r'<h1>\1</h1><div class="section A"><h2>Section A</h2>', htm)
 htm = htm[13:] + '</div></div>'
 
 # Ligatures
@@ -177,6 +180,27 @@ for line in open('sections.txt'):
             raise SystemExit 
         i += 1
 print "%d sections added" % i
+
+# Small caps for first phrase of section. Drop cap for first letter.
+phrases = []
+for line in open('phrases.txt'): # for when we can't use ,.
+    phrase = line.split('#')[0].strip()
+    if not phrase:
+        continue
+    pat = re.compile('('+phrase+')')
+    htm, n = pat.subn(r'\1|', htm)
+    if n == 0:
+        fail("phrase matcheth not: " + phrase)
+    if n != 1:
+        fail("phrase matcheth too much: " + phrase)
+pat = re.compile( r'(<h2>Section )([A-Z])(.*?>)([A-Z])(.*?[.,|])'
+                , re.DOTALL)
+htm = pat.sub( r'\1\2\3<span class="first-letter \2">\4</span>'
+             + r'<span class="section-start">\5</span>', htm)
+htm = htm.replace('|', '')
+
+# Take <h2>Section A</h2> back out
+htm = htm.replace('<h2>Section A</h2>', '')
 
 # Generate CSS for Tabs
 class Tab:

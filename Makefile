@@ -10,7 +10,7 @@ gospels.no-bleed.pdf: gospels.htm gospels.css gospels.no-bleed.css
 		--output=gospels.no-bleed.pdf \
 		--no-default-style
 
-gospels.htm: gospels.raw.htm cleanup.py doubles.txt paragraphs.txt next-line.txt
+gospels.htm: gospels.raw.htm cleanup.py doubles.txt paragraphs.txt next-line.txt phrases.txt
 	python cleanup.py
 
 gospels.raw.htm:

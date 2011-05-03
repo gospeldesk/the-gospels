@@ -145,13 +145,6 @@ H2 {
 .book {
     counter-reset: section;
 }
-.ook P:first-of-type::first-letter {
-    /* not working -- because first-letter is matching the chapter number */
-    /* almost always. in mark there's a section break mid-verse */
-    float: left;
-    font-size: 24pt;
-    font-weight: bold;
-}
 .book P:first-of-type {
     text-indent: 0;
 }
@@ -200,6 +193,28 @@ SPAN.tab-chapter {
 
 DIV.section {
     counter-increment: section;
+}
+SPAN.section-start {
+    font-variant: small-caps;
+    margin-left: -5pt;
+    ackground: orange;
+}
+SPAN.first-letter {
+    float: left;
+    font-variant: small-caps;
+    font-weight: normal;
+    margin: 0;
+    vertical-align: bottom;
+    ackground: #9BFDED;
+
+    padding: 6.6pt 5.5pt 0 0;
+    font-size: 25pt;
+    line-height: 20pt;
+}
+#Mark SPAN.D.first-letter {
+    padding: 4pt 5.5pt 0 0;
+    font-size: 19.25pt;
+    line-height: 19.25pt;
 }
 
 
@@ -289,3 +304,35 @@ DD SPAN.chapter, DD SPAN.verse {
 #John .v7-53 {
     display: none;
 }
+
+
+/* Adjust some verse numbers in the face of drop caps. 
+   These vary with the width of the first letter. I started with 
+    0.65in + (2em @ 10pt) == -1.02674in
+   and totally did it manually from there.
+ */
+
+#Matthew .v20-18,   /* A */ 
+#John .v5-2         /* A */ 
+{ margin-inside: -1.085in; } 
+
+#Luke .v6-13,       /* I */ 
+#Luke .v9-52,       /* I */ 
+#Luke .v19-30       /* I */ 
+{ margin-inside: -0.9in; } 
+
+#Matthew .v4-13,    /* N */ 
+#Matthew .v11-3,    /* N */ 
+#Matthew .v26-7,    /* N */ 
+#Luke .v22-2        /* N */ 
+{ margin-inside: -1.02674in; } /* == 0.65in + (2em @ 10pt) */
+
+#Luke .v1-2         /* S */ 
+{ margin-inside: -1.02674in; } /* == 0.65in + (2em @ 10pt) */
+
+#Mark .v1-2,        /* T */ 
+#Matthew .v1-2      /* T */ 
+{ margin-inside: -1.02674in; } /* == 0.65in + (2em @ 10pt) */
+
+#Matthew .v17-15    /* W */ 
+{ margin-inside: -1.02674in; } /* == 0.65in + (2em @ 10pt) */

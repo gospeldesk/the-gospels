@@ -5,5 +5,6 @@ OSX version of Prince is bundled, so if you clone/download this repo on OSX,
 you should be able to run `make` inside it and it will regenerate gospels.pdf
 (though it will be up to date when you first check it out).
 
-One issue is that I'm using Adobe Caslon Pro (bundled here), which is a
-non-free font.
+One issue is that I'm using Adobe Caslon Pro, which is a non-free font. So in
+order to actually use this pipeline you need to obtain those fonts and place 
+them in directory called "fonts" under this one.
