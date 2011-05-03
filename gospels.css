@@ -184,8 +184,8 @@ SPAN.verse {
     font: normal 8pt/13.333pt "Adobe Caslon Pro";
     background: white;
 }
-SPAN.verse.newline { ackground: #F1AEF9; }
-SPAN.verse.range { ackground: #FFFE98; }
+SPAN.verse.newline { background: #F1AEF9; }
+SPAN.verse.range { background: #FFFE98; }
 SPAN.tab-chapter {
     font: bold 8pt/8pt "Adobe Caslon Pro";
     display: inline-block;
@@ -285,4 +285,7 @@ DD SPAN.chapter, DD SPAN.verse {
 #Luke .v20-43 {
     margin-inside: -1.02674in;  /* == 0.65in + (2em @ 10pt) */
     ackground: #9BFDED ! important;
+}
+#John .v7-53 {
+    display: none;
 }
