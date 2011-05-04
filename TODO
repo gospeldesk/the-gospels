@@ -1,8 +1,8 @@
-finish doubles.txt and next-line.txt
-front matter
+front/back matter
     title page
     copyright notice 
     preface
+    colophon
 lulu
     upload and verify PDF
     cover
@@ -29,3 +29,4 @@ small caps for first line
         T
         W
 check to see what got reflowed 
+finish doubles.txt and next-line.txt
