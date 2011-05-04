@@ -170,7 +170,7 @@ SPAN.chapter SPAN, SPAN.verse SPAN {
 }
 
 SPAN.chapter {
-    font: bold 11pt/13.333pt "Adobe Caslon Pro";
+    font: bold 10pt/13.333pt "Adobe Caslon Pro";
     counter-increment: chapter;
 }
 SPAN.verse {
@@ -235,6 +235,8 @@ DL {
     margin: 0;
     padding: 1em 2em;
     display: block;
+    /* font-style: italic; 
+        -- considered it, under the influence of Bringhurst. */
 }
 DT {
     margin: 0;
@@ -325,14 +327,14 @@ DD SPAN.chapter, DD SPAN.verse {
 #Matthew .v11-3,    /* N */ 
 #Matthew .v26-7,    /* N */ 
 #Luke .v22-2        /* N */ 
-{ margin-inside: -1.02674in; } /* == 0.65in + (2em @ 10pt) */
+{ margin-inside: -1.103in; }
 
 #Luke .v1-2         /* S */ 
-{ margin-inside: -1.02674in; } /* == 0.65in + (2em @ 10pt) */
+{ margin-inside: -1.0155in; }
 
 #Mark .v1-2,        /* T */ 
 #Matthew .v1-2      /* T */ 
-{ margin-inside: -1.02674in; } /* == 0.65in + (2em @ 10pt) */
+{ margin-inside: -1.0725in; }
 
 #Matthew .v17-15    /* W */ 
-{ margin-inside: -1.02674in; } /* == 0.65in + (2em @ 10pt) */
+{ margin-inside: -1.1895in; }

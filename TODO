@@ -1,21 +1,23 @@
-small caps for first line
-    get the height of the cap right
-    second line should be indented more than first
-    tediously line up second verses in a few spots
-        A
-        ---done---
-        I
-        N
-        S
-        T
-        W
 check to see what got reflowed 
 finished writing doubles.txt
              and next-line.txt
-fix verse number positioning in poetry (esp. Luke)
-    put the adjustments on the dd/dt instead of ... what?
 
 ---DONE---
 fix Mark 4:9
 fix Matthew 5:6,10
 Jesus' apostrophes, John 2:1
+fix verse number positioning in poetry (esp. Luke)
+    am I really using italic?
+    put the adjustments on the dd/dt instead of ... what?
+        the idea was to insert shims at the beginning of DT, DD
+            but that doesn't easily account for wrapped lines
+small caps for first line
+    get the height of the cap right
+    second line should be indented more than first
+    tediously line up second verses in a few spots
+        A
+        I
+        N
+        S
+        T
+        W
