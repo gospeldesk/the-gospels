@@ -311,16 +311,18 @@ DD SPAN.chapter, DD SPAN.verse {
 /* Adjust some verse numbers in the face of drop caps. 
    These vary with the width of the first letter. I started with 
     0.65in + (2em @ 10pt) == -1.02674in
-   and totally did it manually from there.
+   and totally did it manually from there (I held up a piece of paper against 
+   the screen as a straightedge).
  */
 
 #Matthew .v20-18,   /* A */ 
 #John .v5-2         /* A */ 
 { margin-inside: -1.085in; } 
 
+#Matthew .v3-2,     /* I */ 
 #Luke .v6-13,       /* I */ 
 #Luke .v9-52,       /* I */ 
-#Luke .v19-30       /* I */ 
+#John .v1-2         /* I */ 
 { margin-inside: -0.9555in; } 
 
 #Matthew .v4-13,    /* N */ 
