@@ -177,8 +177,8 @@ SPAN.verse {
     font: normal 8pt/13.333pt "Adobe Caslon Pro";
     background: white;
 }
-SPAN.verse.newline { background: #F1AEF9; }
-SPAN.verse.range { background: #FFFE98; }
+SPAN.verse.newline { ackground: #F1AEF9; }
+SPAN.verse.range { ackground: #FFFE98; }
 SPAN.tab-chapter {
     font: bold 8pt/8pt "Adobe Caslon Pro";
     display: inline-block;
@@ -340,3 +340,125 @@ DD SPAN.chapter, DD SPAN.verse {
 
 #Matthew .v17-15    /* W */ 
 { margin-inside: -1.1895in; }
+
+
+
+/* Front/Back Matter */
+
+#half-title {
+    page-break-after: always;
+    text-align: center;
+    margin: 1.75in 0;
+}
+.blank {
+    page-break-after: always;
+}
+
+#title-page {
+    text-align: center;
+}
+#title-page .break {
+    margin: 2em 0;
+    padding: 0;
+}
+#copyright {
+    page-break-before: always;
+    text-align: center;
+    margin-top: 3in;
+}
+#copyright P {
+    text-align: center;
+    font-size: smaller;
+    margin: 0 0 2em;
+    padding: 0;
+}
+I {
+    font-style: italic;
+}
+U {
+    font-variant: small-caps;
+    text-transform: lowercase;
+}
+TABLE {
+    display: table;
+    margin: 0 auto 2em;
+}
+TR {
+    display: table-row;
+}
+TH {
+    display: table-cell;
+    border-bottom: 0.5pt solid black;
+    font-variant: small-caps;
+    padding: 0 1em;
+    text-align: center;
+    vertical-align: bottom;
+}
+TH.time {
+    white-space: nowrap;
+    padding: 0 3em 0 3.5em;
+}
+TD {
+    display: table-cell;
+    font-variant: prince-opentype(onum);
+}
+TD.distance {
+    white-space: nowrap;
+}
+
+TD.time {
+    text-align: left;
+    padding-left: 4em;
+}
+TR.r0 TD.time { padding-left: 4.5em; }
+TR.r2 TD.time { padding-left: 4.5em; }
+
+TD.potential {
+    text-align: left;
+    padding-left: 2.9em;
+}
+TR.r0 TD.potential { padding-left: 1.4em; }
+TR.r1 TD.potential { padding-left: 2.4em; }
+
+TR.r0 TD {
+    padding-top: 0.5em;
+}
+
+TD.book {
+    padding: 0 1em;
+}
+
+TR.preface TD.page {
+    padding-bottom: 0.5em;
+}
+TR.preface TD.page {
+    padding: 0 0.1em 0.5em 3em;
+}
+TD.name {
+}
+TD.page {
+    padding-left: 3em;
+    text-align: right;
+}
+
+H3 {
+    display: block;
+    font-variant: small-caps;
+    text-align: center;
+    margin: 2em;
+}
+
+.break {
+    margin: 1em 0 0;
+    padding: 0;
+    text-align: center;
+}
+.borrowing {
+    margin: 1em 0 1em 1em;
+    text-align: justify;
+    text-indent: -1em;
+}
+
+DIV, BR {
+    display: block;
+}
