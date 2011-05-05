@@ -1,0 +1,22 @@
+/* http://store1.adobe.com/cfusion/store/html/index.cfm?store=OLS-US&event=displayFontPackage&code=1712 */
+
+@font-face {
+    font-family: "Adobe Caslon Pro";
+    font-style: normal;
+    font-weight: normal;
+    src: url("fonts/ACaslonPro-Regular.otf");
+}
+
+@font-face {
+    font-family: "Adobe Caslon Pro";
+    font-style: normal;
+    font-weight: bold;
+    src: url("fonts/ACaslonPro-Semibold.otf");
+}
+
+@font-face {
+    font-family: "Adobe Caslon Pro";
+    font-style: italic;
+    font-weight: normal;
+    src: url("fonts/ACaslonPro-Italic.otf");
+}

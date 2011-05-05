@@ -153,11 +153,13 @@ htm = htm.replace('CHEESE', '&rsquo;')
 
 # Headings
 pat = re.compile(r'<h1>\nThe Good News According to (.*)\n</h1>')
-htm = pat.sub(r'</div></div><div id="\1" class="book">'
+initial = r'</div></div>'
+htm = pat.sub(initial + r'<div class="blank-left"></div><div id="\1" '
+              r'class="book">'
               r'<div id="\1TabHack" class="TabHack"><span></span></div>'
               r'<div id="\1Tab" class="Tab"><span></span></div>'
               r'<h1>\1</h1><div class="section A"><h2>Section A</h2>', htm)
-htm = htm[13:] + '</div></div>'
+htm = htm[len(initial):] + '</div></div>'
 
 # Ligatures
 # ... are taken care of for us automatically by OTF/Prince! Yay!
@@ -205,6 +207,38 @@ htm = htm.replace('|', '')
 
 # Take <h2>Section A</h2> back out
 htm = htm.replace('<h2>Section A</h2>', '')
+
+# Generate CSS for page numbers.
+TMPL = """
+@page %(book)s:left {
+    @bottom-right { 
+        content: string(book);
+        font: italic 8pt/8pt "Adobe Caslon Pro";
+    }
+    @bottom-left {
+        font: normal 8pt/8pt "Adobe Caslon Pro";
+        content: counter(page);
+        font-variant: prince-opentype(onum);
+    }
+}
+@page %(book)s:right {
+    @bottom-left { 
+        content: "Section " counter(section, upper-alpha);
+        font: italic 8pt/8pt "Adobe Caslon Pro";
+    }
+    @bottom-right {
+        font: normal 8pt/8pt "Adobe Caslon Pro";
+        content: counter(page);
+        font-variant: prince-opentype(onum);
+    }
+}
+"""
+
+fp = open('page-numbers.css', 'w+')
+for book in ('Mark', 'Matthew', 'Luke', 'John'):
+    fp.write(TMPL % {'book': book})
+
+
 
 # Generate CSS for Tabs
 class Tab:
@@ -300,6 +334,17 @@ htm = htm.replace('much.<', 'much. <')      # Mark 4:9
 htm = htm.replace( 'prophesied, saying,\n<dl>'  # Luke 1:68
                  , 'prophesied, saying,\n<dl class="unorphan">'
                   )
+htm = htm + open('colophon.htm').read()
+
+endings = [ "for they were afraid."
+          , "of the age. Amen."
+          , "blessing God. Amen."
+          , "would be written."
+           ]
+for ending in endings:
+    if htm.count(ending) != 1:
+        raise SystemExit("bad ending")
+    htm = htm.replace(ending, ending + ' <span class="ending">&#xE018;</span>')
 
 # Done. Write back.
 open("gospels.htm", "w+").write(htm)

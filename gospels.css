@@ -1,29 +1,11 @@
 /* tabs.css is auto-generated during `make` */
 @import url("tabs.css");
+@import url("fonts.css");
+@import url("page-numbers.css");
 
 
-/* http://store1.adobe.com/cfusion/store/html/index.cfm?store=OLS-US&event=displayFontPackage&code=1712 */
-@font-face {
-    font-family: "Adobe Caslon Pro";
-    font-style: normal;
-    font-weight: normal;
-    src: url("fonts/ACaslonPro-Regular.otf");
-}
-
-@font-face {
-    font-family: "Adobe Caslon Pro";
-    font-style: normal;
-    font-weight: bold;
-    src: url("fonts/ACaslonPro-Semibold.otf");
-}
-
-@font-face {
-    font-family: "Adobe Caslon Pro";
-    font-style: italic;
-    font-weight: normal;
-    src: url("fonts/ACaslonPro-Italic.otf");
-}
-
+/* Page */
+/* ==== */
 
 @page {
     size: 6.25in 9.25in;
@@ -32,26 +14,31 @@
     padding: 0;
 }
 
-@page:left {
-    @bottom-right { 
-        content: string(book);
-        font: italic 8pt/8pt "Adobe Caslon Pro";
-    }
-    @bottom-left {
-        font: normal 8pt/8pt "Adobe Caslon Pro";
-        content: counter(page);
-    }
-}
-@page:right {
+
+/* Preface */
+/* ======= */
+
+@page Preface:left {
     @bottom-left { 
-        content: "Section " counter(section, upper-alpha);
-        font: italic 8pt/8pt "Adobe Caslon Pro";
-    }
-    @bottom-right {
+        content: counter(page, lower-roman);
         font: normal 8pt/8pt "Adobe Caslon Pro";
-        content: counter(page);
     }
 }
+@page Preface:right {
+    @bottom-right { 
+        content: counter(page, lower-roman);
+        font: normal 8pt/8pt "Adobe Caslon Pro";
+    }
+}
+@page Preface:first {
+    @bottom-left { 
+        background: red ! important; 
+    }
+}
+#Preface { 
+    counter-reset: page 1; 
+}
+#Preface { page: Preface; }
 
 
 /* Page Tabs, Bleed */
@@ -122,14 +109,13 @@ H1 {
     text-align: center;
     margin: 1.75in 0;
     padding: 0;
-    page-break-before: right;
     display: block;
     prince-bookmark-level: 1;
     string-set: book content();
-    age: newbook;
+    counter-reset: section 1;
 }
 #MarkTabHack {
-    counter-reset: page;
+    counter-reset: page 1;
 }
 H2 {
     font: normal 12pt/12pt "Adobe Caslon Pro";
@@ -139,11 +125,7 @@ H2 {
     page-break-before: always;
     display: block;
     prince-bookmark-level: 2;
-    age: newsection; /* this isn't working to suppress headers on the first
-                        page of each section */
-}
-.book {
-    counter-reset: section;
+    counter-increment: section;
 }
 .book P:first-of-type {
     text-indent: 0;
@@ -192,7 +174,7 @@ SPAN.tab-chapter {
 }
 
 DIV.section {
-    counter-increment: section;
+    ounter-increment: section;
 }
 SPAN.section-start {
     font-variant: small-caps;
@@ -350,9 +332,8 @@ DD SPAN.chapter, DD SPAN.verse {
     text-align: center;
     margin: 1.75in 0;
 }
-.blank {
-    page-break-after: always;
-}
+.blank-left { page-break-before: left; }
+.blank-right { page-break-before: right; }
 
 #title-page {
     text-align: center;
@@ -361,16 +342,35 @@ DD SPAN.chapter, DD SPAN.verse {
     margin: 2em 0;
     padding: 0;
 }
+#dedication {
+    font-variant: small-caps;
+    page-break-before: always;
+    text-align: center;
+    margin-top: 3in;
+}
 #copyright {
     page-break-before: always;
     text-align: center;
     margin-top: 3in;
 }
 #copyright P {
-    text-align: center;
     font-size: smaller;
     margin: 0 0 2em;
     padding: 0;
+}
+#copyright .left {
+    position: absolute;
+    top: 1.75in;
+    left: -0.25in;
+}
+#copyright .left P {
+    text-align: right;
+}
+#copyright .right {
+    position: absolute;
+    top: 1.75in;
+    left: 2.65in;
+    font-style: italic;
 }
 I {
     font-style: italic;
@@ -448,6 +448,14 @@ H3 {
     margin: 2em;
 }
 
+BLOCKQUOTE {
+    font-style: italic;
+    margin: 1em;
+    text-align: justify;
+}
+BLOCKQUOTE I {
+    font-style: normal;
+}
 .break {
     margin: 1em 0 0;
     padding: 0;
@@ -458,7 +466,18 @@ H3 {
     text-align: justify;
     text-indent: -1em;
 }
+.signature {
+    margin: 4em 0 0 16em;
+}
 
-DIV, BR {
+BLOCKQUOTE, BR, DIV {
     display: block;
+}
+.ending {
+    font-size: smaller;
+}
+#colophon {
+    page-break-before: right;
+    margin: 1.75in 0;
+    text-align: justify;
 }

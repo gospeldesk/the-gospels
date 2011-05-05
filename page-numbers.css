@@ -1,0 +1,92 @@
+
+@page Mark:left {
+    @bottom-right { 
+        content: string(book);
+        font: italic 8pt/8pt "Adobe Caslon Pro";
+    }
+    @bottom-left {
+        font: normal 8pt/8pt "Adobe Caslon Pro";
+        content: counter(page);
+        font-variant: prince-opentype(onum);
+    }
+}
+@page Mark:right {
+    @bottom-left { 
+        content: "Section " counter(section, upper-alpha);
+        font: italic 8pt/8pt "Adobe Caslon Pro";
+    }
+    @bottom-right {
+        font: normal 8pt/8pt "Adobe Caslon Pro";
+        content: counter(page);
+        font-variant: prince-opentype(onum);
+    }
+}
+
+@page Matthew:left {
+    @bottom-right { 
+        content: string(book);
+        font: italic 8pt/8pt "Adobe Caslon Pro";
+    }
+    @bottom-left {
+        font: normal 8pt/8pt "Adobe Caslon Pro";
+        content: counter(page);
+        font-variant: prince-opentype(onum);
+    }
+}
+@page Matthew:right {
+    @bottom-left { 
+        content: "Section " counter(section, upper-alpha);
+        font: italic 8pt/8pt "Adobe Caslon Pro";
+    }
+    @bottom-right {
+        font: normal 8pt/8pt "Adobe Caslon Pro";
+        content: counter(page);
+        font-variant: prince-opentype(onum);
+    }
+}
+
+@page Luke:left {
+    @bottom-right { 
+        content: string(book);
+        font: italic 8pt/8pt "Adobe Caslon Pro";
+    }
+    @bottom-left {
+        font: normal 8pt/8pt "Adobe Caslon Pro";
+        content: counter(page);
+        font-variant: prince-opentype(onum);
+    }
+}
+@page Luke:right {
+    @bottom-left { 
+        content: "Section " counter(section, upper-alpha);
+        font: italic 8pt/8pt "Adobe Caslon Pro";
+    }
+    @bottom-right {
+        font: normal 8pt/8pt "Adobe Caslon Pro";
+        content: counter(page);
+        font-variant: prince-opentype(onum);
+    }
+}
+
+@page John:left {
+    @bottom-right { 
+        content: string(book);
+        font: italic 8pt/8pt "Adobe Caslon Pro";
+    }
+    @bottom-left {
+        font: normal 8pt/8pt "Adobe Caslon Pro";
+        content: counter(page);
+        font-variant: prince-opentype(onum);
+    }
+}
+@page John:right {
+    @bottom-left { 
+        content: "Section " counter(section, upper-alpha);
+        font: italic 8pt/8pt "Adobe Caslon Pro";
+    }
+    @bottom-right {
+        font: normal 8pt/8pt "Adobe Caslon Pro";
+        content: counter(page);
+        font-variant: prince-opentype(onum);
+    }
+}

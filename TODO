@@ -1,28 +1,11 @@
-front/back matter
-    half-title page
-    title page
-    copyright notice 
-    preface
-        draft
-        ---done---
-        proof
-            gospel -> Gospel
-            fix width of inverse square table
-            citations
-            and, vs. and
-            ---done---
-            roman numerals for preface
-            suppress section number on preface
-        revise
-    acknowledgements
-    ---done---
-    colophon
 lulu
     upload and verify PDF
     cover
     order!
 
 ---BUMPED---
+figure out prince licensing
+    finance w/ kickstarter?
 true italics for the book/section names in the footer
 
 ---DONE---
@@ -46,3 +29,23 @@ small caps for first line
         W
 check to see what got reflowed 
 finish doubles.txt and next-line.txt
+front/back matter
+    half-title page
+    title page
+    copyright notice 
+    acknowledgements
+    table of contents
+        fill in page numbers
+    colophon
+    preface
+        draft
+        proof
+            gospel -> Gospel
+            fix width of inverse square table
+            citations
+            and, vs. and
+            roman numerals for preface
+            suppress section number on preface
+        revise
+    clean up Section 0 on first page of book
+    get rid of footer on blank page before book
