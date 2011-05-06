@@ -153,13 +153,12 @@ htm = htm.replace('CHEESE', '&rsquo;')
 
 # Headings
 pat = re.compile(r'<h1>\nThe Good News According to (.*)\n</h1>')
-initial = r'</div></div>'
-htm = pat.sub(initial + r'<div class="blank-left"></div><div id="\1" '
+htm = pat.sub(r'</div></div><div class="blank-left"></div><div id="\1" '
               r'class="book">'
               r'<div id="\1TabHack" class="TabHack"><span></span></div>'
               r'<div id="\1Tab" class="Tab"><span></span></div>'
               r'<h1>\1</h1><div class="section A"><h2>Section A</h2>', htm)
-htm = htm[len(initial):] + '</div></div>'
+htm = htm[13:] + '</div></div>'
 
 # Ligatures
 # ... are taken care of for us automatically by OTF/Prince! Yay!
