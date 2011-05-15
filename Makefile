@@ -4,9 +4,9 @@ gospels.pdf: all.htm gospels.css fonts.css
 		--output=gospels.pdf \
 		--no-default-style
 
-preface.pdf: preface.htm gospels.css fonts.css
+preface.pdf: preface.htm preface.css gospels.css fonts.css
 	../bin/prince preface.htm \
-		--style=gospels.css \
+		--style=preface.css \
 		--output=preface.pdf \
 		--no-default-style
 
