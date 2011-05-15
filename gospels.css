@@ -83,7 +83,8 @@
     right: -1.125in;
     margin: 0;
     padding: 0;
-    background: black;
+    border: 0.5pt solid black;
+    border-style: solid none;
 }
 
 .TabHack SPAN {
@@ -96,7 +97,7 @@
     width: 0.2in;
     position: absolute;
     top: -1.125in;
-    right: -0.75in;
+    right: -0.93in;
 }
 
 
@@ -162,15 +163,17 @@ SPAN.verse {
 SPAN.verse.newline { ackground: #F1AEF9; }
 SPAN.verse.range { ackground: #FFFE98; }
 SPAN.tab-chapter {
-    font: bold 8pt/8pt "Adobe Caslon Pro";
+    font: normal 7pt/7pt "Adobe Caslon Pro";
     display: inline-block;
     position: absolute;
-    right: -0.7in;
+    right: -0.8543in;
     /* top: -1.125in; set in tabs.css (auto-generated) */
     height: 8pt;
     width: 0.25in;
-    background: white;
+    padding: 0.5pt 0;
+    background: white; 
     text-align: right;
+    ont-variant: prince-opentype(onum);
 }
 
 DIV.section {

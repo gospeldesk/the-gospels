@@ -328,13 +328,7 @@ for line in open('linewraps.txt'):
     wrapped = '%s <span class="poetry-linewrap">%s</span>' % (foo, bar)
     htm = htm.replace(line, wrapped)
 
-# Final hacks.
-htm = htm.replace('much.<', 'much. <')      # Mark 4:9
-htm = htm.replace( 'prophesied, saying,\n<dl>'  # Luke 1:68
-                 , 'prophesied, saying,\n<dl class="unorphan">'
-                  )
-htm = htm + open('colophon.htm').read()
-
+# Stick an ornament at the end of each book.
 endings = [ "for they were afraid."
           , "of the age. Amen."
           , "blessing God. Amen."
@@ -344,6 +338,16 @@ for ending in endings:
     if htm.count(ending) != 1:
         raise SystemExit("bad ending")
     htm = htm.replace(ending, ending + ' <span class="ending">&#xE018;</span>')
+
+# Final hacks.
+htm = htm.replace('much.<', 'much. <')      # Mark 4:9
+htm = htm.replace( 'prophesied, saying,\n<dl>'  # Luke 1:68
+                 , 'prophesied, saying,\n<dl class="unorphan">'
+                  )
+htm = htm.replace('Behold, I am with you', '<SPAN class="tab-chapter c28">28</SPAN>Behold, I am with you')
+
+# Tack on the colophon.
+htm = htm + open('colophon.htm').read()
 
 # Done. Write back.
 open("gospels.htm", "w+").write(htm)
