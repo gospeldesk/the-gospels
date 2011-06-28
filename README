@@ -8,3 +8,7 @@ you should be able to run `make` inside it and it will regenerate gospels.pdf
 One issue is that I'm using Adobe Caslon Pro, which is a non-free font. So in
 order to actually use this pipeline you need to obtain those fonts and place 
 them in directory called "fonts" under this one.
+
+Another issue is that Lulu chokes on PrinceXML PDFs. :-(  Currently I am
+opening/saving the gospels.prince.pdf output in Adobe Acrobat 5.0.5 running on
+Windows 7 despite the "Known Compatibility Issues" warning!
