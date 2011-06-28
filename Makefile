@@ -1,7 +1,7 @@
-gospels.pdf: all.htm gospels.css fonts.css page-numbers.css tabs.css
+gospels.prince.pdf: all.htm gospels.css fonts.css page-numbers.css tabs.css
 	./prince all.htm \
 		--style=gospels.css \
-		--output=gospels.pdf \
+		--output=gospels.prince.pdf \
 		--no-default-style
 
 preface.pdf: preface.htm preface.css gospels.css fonts.css
