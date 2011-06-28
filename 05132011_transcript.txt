@@ -1,0 +1,45 @@
+Chat Started: 05-13-2011 14:58:53
+Chat Log:
+David L: Please hold on while I have a look at the information you have provided. 
+David L: I am going to create a case and then I will send you an email. Please respond to the email with a picture or two of the garbled text.
+You: Cool, thank you.
+David L: Ok, I have just sent out the email. 
+You: Cool, I just took a couple pictures.
+David L: Have you sent them? What is your order number please?
+You: /me digging that up
+You: Ok, email reply sent.
+You: 5259294
+You: That's the bad order.
+David L: ok please hold
+You: It looks like it's a missing font.
+You: I used the same PDF for both orders.
+You: I also have another order in process, 5277865.
+You: It would be great if we could catch that one from also being garbled.
+David L: You can cancel orders within 1 hour of having placed them. If you still have time, log into your account and cancel the latest order
+You: Too late.
+You: Can you do it?
+David L: No we cannot. We are a print on demand company and the files are sent out to our printers after an hour of an order having been placed. 
+David L: Please hold while I look at your photos and files
+You: Thanks.
+David L: Was the garbled text just at the beginning of the Gospel according to Luke?
+You: Nope, throughout.
+You: Every page.
+You: Need more photos?
+David L: The other picture you showed me, was that version 2 of your book project?
+You: That's the hardback.
+You: OID given in the email
+You: Expected: http://www.lulu.com/product/hardcover/-/15662907
+You: Actual: http://www.lulu.com/product/paperback/-/15662906
+You: expected == good == hardcover
+You: actual == bad == paperback
+David L: Ok, I will place a reorder for you
+David L: It looks like a printing error
+You: Okay.
+You: Who is your printer?
+You: And is there any way we can ensure that my current order comes out okay?
+David L: Please hold I am talking to someone about your case. 
+You: Cool, thanks.
+David L: We have discussed this print issue and a member of our print team will have to take a closer look at your pdf file. We cannot resolve this situation right now in chat and this member of our print team will be in contact with you via email.
+You: Cool, thanks David!
+David L: You are more than welcome. Do not worry. We will get to the bottom of what is causing the garbled text. Have a good weekend.
+You: Thanks, you too.

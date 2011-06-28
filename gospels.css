@@ -40,6 +40,35 @@
 }
 #Preface { page: Preface; }
 
+#order {
+    text-align: left;
+    margin: 1em 2em 1em 1em; 
+}
+#order .number {
+    text-align: right;
+    padding-right: 0.5em;
+}
+#order TH {
+    padding: 0 1em 0 0;
+    border: 0;
+    text-align: left;
+    vertical-align: top;
+}
+.no-indent {
+    text-indent: 0;
+}
+
+#Preface UL {
+    display: block;
+    margin: 1em 0 1em;
+    
+}
+#Preface LI {
+    display: list-item;
+    margin: 0 0 0 1.5em;
+    padding-left: 0.3em;
+}
+
 
 /* Page Tabs, Bleed */
 /* ================ */
@@ -83,8 +112,7 @@
     right: -1.125in;
     margin: 0;
     padding: 0;
-    border: 0.5pt solid black;
-    border-style: solid none;
+    background: black;
 }
 
 .TabHack SPAN {
@@ -97,7 +125,7 @@
     width: 0.2in;
     position: absolute;
     top: -1.125in;
-    right: -0.93in;
+    right: -0.75in;
 }
 
 
@@ -166,7 +194,7 @@ SPAN.tab-chapter {
     font: normal 7pt/7pt "Adobe Caslon Pro";
     display: inline-block;
     position: absolute;
-    right: -0.8543in;
+    right: -0.7in;
     /* top: -1.125in; set in tabs.css (auto-generated) */
     height: 8pt;
     width: 0.25in;
@@ -394,7 +422,7 @@ TH {
     border-bottom: 0.5pt solid black;
     font-variant: small-caps;
     padding: 0 1em;
-    text-align: center;
+    text-align: left;
     vertical-align: bottom;
 }
 TH.time {

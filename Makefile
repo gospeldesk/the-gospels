@@ -1,11 +1,11 @@
-gospels.pdf: all.htm gospels.css fonts.css
-	../bin/prince all.htm \
+gospels.pdf: all.htm gospels.css fonts.css page-numbers.css tabs.css
+	./prince all.htm \
 		--style=gospels.css \
 		--output=gospels.pdf \
 		--no-default-style
 
 preface.pdf: preface.htm preface.css gospels.css fonts.css
-	../bin/prince preface.htm \
+	./prince preface.htm \
 		--style=preface.css \
 		--output=preface.pdf \
 		--no-default-style
@@ -18,7 +18,7 @@ gospels.htm: gospels.raw.htm cleanup.py doubles.txt paragraphs.txt next-line.txt
 
 gospels.raw.htm:
 	cat webhtm/Mark.htm \
-	    webhtm/Matthew.htm \
-	    webhtm/Luke.htm \
-	    webhtm/John.htm \
-	    > gospels.raw.htm
+		webhtm/Matthew.htm \
+		webhtm/Luke.htm \
+		webhtm/John.htm \
+		> gospels.raw.htm

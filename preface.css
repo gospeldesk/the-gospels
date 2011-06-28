@@ -1,0 +1,10 @@
+@import url("gospels.css");
+
+.blank-right,
+.blank-left,
+#half-title,
+#copyright,
+#dedication {
+    display: none;
+}
+

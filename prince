@@ -1,0 +1,3 @@
+#! /bin/sh
+PRINCE="/Users/whit537/personal/gospels/prince-7.1-macosx/lib/prince"
+exec "$PRINCE/bin/prince" --prefix="$PRINCE" "$@"
