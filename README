@@ -7,10 +7,11 @@ you should be able to run `make` inside it and it will regenerate gospels.pdf
 
 One issue is that I'm using Adobe Caslon Pro, which is a non-free font. So in
 order to actually use this pipeline you need to obtain those fonts and place 
-them in directory called "fonts" under this one.
+them in a directory called "fonts" under this one.
 
 Another issue is that Lulu chokes on PrinceXML PDFs because of the way fonts
 are encoded (Identity-H vs. Custom). The solution I've found is to open the
 Prince PDF in Acrobat, save it to PostScript (using the "Acrobat Distiller"
 Printer Description File), and then run the *.ps file through Distiller using
-Lulu.joboptions. Phew!
+Lulu.joboptions. So that's another non-free dependency, if you want to use
+Lulu.
