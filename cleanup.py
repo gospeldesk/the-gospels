@@ -57,6 +57,18 @@ for line in open('paragraphs.txt'):
         print "%d matches for paragraph pattern: %s" % (n, pattern)
         raise SystemExit
 
+# Misplaced breaks
+breaks = [r'<script type="text/javascript">cb\(1,18\),</script>Immediately']
+for line in breaks:
+    pattern = line.split('#', 1)[0].strip()
+    if not pattern:
+        continue
+    pattern = '<p>(%s)' % pattern
+    htm, n = re.subn(pattern, '\\1', htm) 
+    if n != 1:
+        print "%d matches for (un)paragraph pattern: %s" % (n, pattern)
+        raise SystemExit
+
 
 # Chapters
 # ========
@@ -340,7 +352,8 @@ for ending in endings:
     htm = htm.replace(ending, ending + ' <span class="ending">&#xE018;</span>')
 
 # Final hacks.
-htm = htm.replace('much.<', 'much. <')      # Mark 4:9
+htm = htm.replace('? I know you', '? I know')     # Mark 1:24
+htm = htm.replace('much.<', 'much. <')          # Mark 4:9
 htm = htm.replace( 'prophesied, saying,\n<dl>'  # Luke 1:68
                  , 'prophesied, saying,\n<dl class="unorphan">'
                   )

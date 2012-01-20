@@ -10,6 +10,9 @@ preface.pdf: preface.htm preface.css gospels.css fonts.css
 		--output=preface.pdf \
 		--no-default-style
 
+html: gospels.htm
+	python convert-to-html.py
+
 all.htm: preface.htm gospels.htm
 	cat preface.htm gospels.htm > all.htm
 

@@ -1,8 +1,6 @@
 # These have to be in order, or some will get dropped.
 
 Mark
-1:20
-1:23
 1:28
 1:30
 2:21
