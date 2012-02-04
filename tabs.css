@@ -1,117 +1,117 @@
 #MarkTab SPAN {
-    /*  75472 / 427844 =  17.6% */
-    /* * 9in: 1.587607in */
+    /*  75472 / 427727 =  17.6% */
+    /* * 9in: 1.588041in */
     top: -1.125000in;
-    height: 1.712607in;
+    height: 1.713041in;
 }
 #Mark .c1 { top: -1.000000in }
-#Mark .c2 { top: -0.901567in }
-#Mark .c3 { top: -0.803134in }
-#Mark .c4 { top: -0.704701in }
-#Mark .c5 { top: -0.606268in }
-#Mark .c6 { top: -0.507835in }
-#Mark .c7 { top: -0.409402in }
-#Mark .c8 { top: -0.310969in }
-#Mark .c9 { top: -0.212536in }
-#Mark .c10 { top: -0.114103in }
-#Mark .c11 { top: -0.015670in }
-#Mark .c12 { top: 0.082763in }
-#Mark .c13 { top: 0.181196in }
-#Mark .c14 { top: 0.279630in }
-#Mark .c15 { top: 0.378063in }
-#Mark .c16 { top: 0.476496in }
+#Mark .c2 { top: -0.901538in }
+#Mark .c3 { top: -0.803076in }
+#Mark .c4 { top: -0.704614in }
+#Mark .c5 { top: -0.606152in }
+#Mark .c6 { top: -0.507690in }
+#Mark .c7 { top: -0.409228in }
+#Mark .c8 { top: -0.310766in }
+#Mark .c9 { top: -0.212304in }
+#Mark .c10 { top: -0.113842in }
+#Mark .c11 { top: -0.015380in }
+#Mark .c12 { top: 0.083082in }
+#Mark .c13 { top: 0.181544in }
+#Mark .c14 { top: 0.280006in }
+#Mark .c15 { top: 0.378468in }
+#Mark .c16 { top: 0.476930in }
 
 #MatthewTab SPAN {
-    /* 122955 / 427844 =  28.7% */
-    /* * 9in: 2.586445in */
-    top: 0.587607in;
-    height: 2.586445in;
+    /* 122955 / 427727 =  28.7% */
+    /* * 9in: 2.587153in */
+    top: 0.588041in;
+    height: 2.587153in;
 }
-#Matthew .c1 { top: 0.587607in }
-#Matthew .c2 { top: 0.679286in }
-#Matthew .c3 { top: 0.770965in }
-#Matthew .c4 { top: 0.862644in }
-#Matthew .c5 { top: 0.954323in }
-#Matthew .c6 { top: 1.046002in }
-#Matthew .c7 { top: 1.137681in }
-#Matthew .c8 { top: 1.229360in }
-#Matthew .c9 { top: 1.321039in }
-#Matthew .c10 { top: 1.412718in }
-#Matthew .c11 { top: 1.504397in }
-#Matthew .c12 { top: 1.596076in }
-#Matthew .c13 { top: 1.687755in }
-#Matthew .c14 { top: 1.779434in }
-#Matthew .c15 { top: 1.871113in }
-#Matthew .c16 { top: 1.962792in }
-#Matthew .c17 { top: 2.054471in }
-#Matthew .c18 { top: 2.146150in }
-#Matthew .c19 { top: 2.237829in }
-#Matthew .c20 { top: 2.329508in }
-#Matthew .c21 { top: 2.421187in }
-#Matthew .c22 { top: 2.512866in }
-#Matthew .c23 { top: 2.604545in }
-#Matthew .c24 { top: 2.696225in }
-#Matthew .c25 { top: 2.787904in }
-#Matthew .c26 { top: 2.879583in }
-#Matthew .c27 { top: 2.971262in }
-#Matthew .c28 { top: 3.062941in }
+#Matthew .c1 { top: 0.588041in }
+#Matthew .c2 { top: 0.679746in }
+#Matthew .c3 { top: 0.771451in }
+#Matthew .c4 { top: 0.863157in }
+#Matthew .c5 { top: 0.954862in }
+#Matthew .c6 { top: 1.046567in }
+#Matthew .c7 { top: 1.138272in }
+#Matthew .c8 { top: 1.229978in }
+#Matthew .c9 { top: 1.321683in }
+#Matthew .c10 { top: 1.413388in }
+#Matthew .c11 { top: 1.505093in }
+#Matthew .c12 { top: 1.596799in }
+#Matthew .c13 { top: 1.688504in }
+#Matthew .c14 { top: 1.780209in }
+#Matthew .c15 { top: 1.871914in }
+#Matthew .c16 { top: 1.963620in }
+#Matthew .c17 { top: 2.055325in }
+#Matthew .c18 { top: 2.147030in }
+#Matthew .c19 { top: 2.238735in }
+#Matthew .c20 { top: 2.330441in }
+#Matthew .c21 { top: 2.422146in }
+#Matthew .c22 { top: 2.513851in }
+#Matthew .c23 { top: 2.605556in }
+#Matthew .c24 { top: 2.697261in }
+#Matthew .c25 { top: 2.788967in }
+#Matthew .c26 { top: 2.880672in }
+#Matthew .c27 { top: 2.972377in }
+#Matthew .c28 { top: 3.064082in }
 
 #LukeTab SPAN {
-    /* 130525 / 427844 =  30.5% */
-    /* * 9in: 2.745685in */
-    top: 3.174052in;
-    height: 2.745685in;
+    /* 130408 / 427727 =  30.5% */
+    /* * 9in: 2.743975in */
+    top: 3.175194in;
+    height: 2.743975in;
 }
-#Luke .c1 { top: 3.174052in }
-#Luke .c2 { top: 3.288598in }
-#Luke .c3 { top: 3.403145in }
-#Luke .c4 { top: 3.517692in }
-#Luke .c5 { top: 3.632239in }
-#Luke .c6 { top: 3.746785in }
-#Luke .c7 { top: 3.861332in }
-#Luke .c8 { top: 3.975879in }
-#Luke .c9 { top: 4.090425in }
-#Luke .c10 { top: 4.204972in }
-#Luke .c11 { top: 4.319519in }
-#Luke .c12 { top: 4.434066in }
-#Luke .c13 { top: 4.548612in }
-#Luke .c14 { top: 4.663159in }
-#Luke .c15 { top: 4.777706in }
-#Luke .c16 { top: 4.892252in }
-#Luke .c17 { top: 5.006799in }
-#Luke .c18 { top: 5.121346in }
-#Luke .c19 { top: 5.235892in }
-#Luke .c20 { top: 5.350439in }
-#Luke .c21 { top: 5.464986in }
-#Luke .c22 { top: 5.579533in }
-#Luke .c23 { top: 5.694079in }
-#Luke .c24 { top: 5.808626in }
+#Luke .c1 { top: 3.175194in }
+#Luke .c2 { top: 3.289666in }
+#Luke .c3 { top: 3.404138in }
+#Luke .c4 { top: 3.518610in }
+#Luke .c5 { top: 3.633083in }
+#Luke .c6 { top: 3.747555in }
+#Luke .c7 { top: 3.862027in }
+#Luke .c8 { top: 3.976500in }
+#Luke .c9 { top: 4.090972in }
+#Luke .c10 { top: 4.205444in }
+#Luke .c11 { top: 4.319917in }
+#Luke .c12 { top: 4.434389in }
+#Luke .c13 { top: 4.548861in }
+#Luke .c14 { top: 4.663334in }
+#Luke .c15 { top: 4.777806in }
+#Luke .c16 { top: 4.892278in }
+#Luke .c17 { top: 5.006751in }
+#Luke .c18 { top: 5.121223in }
+#Luke .c19 { top: 5.235695in }
+#Luke .c20 { top: 5.350168in }
+#Luke .c21 { top: 5.464640in }
+#Luke .c22 { top: 5.579112in }
+#Luke .c23 { top: 5.693585in }
+#Luke .c24 { top: 5.808057in }
 
 #JohnTab SPAN {
-    /*  98892 / 427844 =  23.1% */
-    /* * 9in: 2.080263in */
-    top: 5.919737in;
-    height: 2.205263in;
+    /*  98892 / 427727 =  23.1% */
+    /* * 9in: 2.080832in */
+    top: 5.919168in;
+    height: 2.205832in;
 }
-#John .c1 { top: 5.919737in }
-#John .c2 { top: 6.018195in }
-#John .c3 { top: 6.116652in }
-#John .c4 { top: 6.215110in }
-#John .c5 { top: 6.313567in }
-#John .c6 { top: 6.412025in }
-#John .c7 { top: 6.510483in }
-#John .c8 { top: 6.608940in }
-#John .c9 { top: 6.707398in }
-#John .c10 { top: 6.805855in }
-#John .c11 { top: 6.904313in }
-#John .c12 { top: 7.002771in }
-#John .c13 { top: 7.101228in }
-#John .c14 { top: 7.199686in }
-#John .c15 { top: 7.298143in }
-#John .c16 { top: 7.396601in }
-#John .c17 { top: 7.495059in }
-#John .c18 { top: 7.593516in }
-#John .c19 { top: 7.691974in }
-#John .c20 { top: 7.790431in }
+#John .c1 { top: 5.919168in }
+#John .c2 { top: 6.017654in }
+#John .c3 { top: 6.116140in }
+#John .c4 { top: 6.214626in }
+#John .c5 { top: 6.313112in }
+#John .c6 { top: 6.411598in }
+#John .c7 { top: 6.510084in }
+#John .c8 { top: 6.608570in }
+#John .c9 { top: 6.707056in }
+#John .c10 { top: 6.805542in }
+#John .c11 { top: 6.904028in }
+#John .c12 { top: 7.002515in }
+#John .c13 { top: 7.101001in }
+#John .c14 { top: 7.199487in }
+#John .c15 { top: 7.297973in }
+#John .c16 { top: 7.396459in }
+#John .c17 { top: 7.494945in }
+#John .c18 { top: 7.593431in }
+#John .c19 { top: 7.691917in }
+#John .c20 { top: 7.790403in }
 #John .c21 { top: 7.888889in }
 

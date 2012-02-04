@@ -352,12 +352,14 @@ for ending in endings:
     htm = htm.replace(ending, ending + ' <span class="ending">&#xE018;</span>')
 
 # Final hacks.
-htm = htm.replace('? I know you', '? I know')     # Mark 1:24
+htm = htm.replace('? I know you', '? I know')   # Mark 1:24
+htm = htm.replace('you who you', 'who you')     # Luke 4:34
 htm = htm.replace('much.<', 'much. <')          # Mark 4:9
 htm = htm.replace( 'prophesied, saying,\n<dl>'  # Luke 1:68
                  , 'prophesied, saying,\n<dl class="unorphan">'
                   )
 htm = htm.replace('Behold, I am with you', '<SPAN class="tab-chapter c28">28</SPAN>Behold, I am with you')
+htm = htm.replace('Passover.\n<p>', 'Passover.\n') # Luke 2:41
 
 # Tack on the colophon.
 htm = htm + open('colophon.htm').read()
