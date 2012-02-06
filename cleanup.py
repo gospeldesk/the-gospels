@@ -351,6 +351,12 @@ for ending in endings:
         raise SystemExit("bad ending")
     htm = htm.replace(ending, ending + ' <span class="ending">&#xE018;</span>')
 
+# KING OF THE JEWS
+htm = htm.replace('THIS IS', '<u>THIS IS')
+htm = htm.replace('written, JESUS', 'written, <u>JESUS')
+htm = htm.replace('him, THE KING', 'him, <u>THE KING')
+htm = htm.replace('THE JEWS', 'THE JEWS</u>')
+
 # Final hacks.
 htm = htm.replace('? I know you', '? I know')   # Mark 1:24
 htm = htm.replace('you who you', 'who you')     # Luke 4:34
