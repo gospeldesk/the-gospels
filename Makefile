@@ -16,7 +16,7 @@ html: gospels.htm
 all.htm: preface.htm gospels.htm
 	cat preface.htm gospels.htm > all.htm
 
-gospels.htm: gospels.raw.htm cleanup.py doubles.txt paragraphs.txt next-line.txt phrases.txt colophon.htm
+gospels.htm: gospels.raw.htm cleanup.py doubles.txt paragraphs.txt next-line.txt phrases.txt
 	python cleanup.py
 
 gospels.raw.htm:

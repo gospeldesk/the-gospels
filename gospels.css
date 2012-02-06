@@ -382,26 +382,13 @@ DD SPAN.chapter, DD SPAN.verse {
 #copyright {
     page-break-before: always;
     text-align: center;
-    margin-top: 3in;
+    font-size: smaller;
 }
 #copyright P {
-    font-size: smaller;
     margin: 0 0 2em;
     padding: 0;
-}
-#copyright .left {
-    position: absolute;
-    top: 1.75in;
-    left: -0.25in;
-}
-#copyright .left P {
-    text-align: right;
-}
-#copyright .right {
-    position: absolute;
-    top: 1.75in;
-    left: 2.65in;
-    font-style: italic;
+    text-indent: 0;
+    text-align: left;
 }
 I {
     font-style: italic;
