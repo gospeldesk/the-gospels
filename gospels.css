@@ -494,8 +494,6 @@ BLOCKQUOTE, BR, DIV {
 .ending {
     font-size: smaller;
 }
-#colophon {
-    page-break-before: right;
-    margin: 1.75in 0;
-    text-align: justify;
+.page-break {
+    page-break-before: always;
 }

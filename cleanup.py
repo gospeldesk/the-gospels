@@ -367,5 +367,7 @@ htm = htm.replace( 'prophesied, saying,\n<dl>'  # Luke 1:68
 htm = htm.replace('Behold, I am with you', '<SPAN class="tab-chapter c28">28</SPAN>Behold, I am with you')
 htm = htm.replace('Passover.\n<p>', 'Passover.\n') # Luke 2:41
 
+htm += open('end.htm').read()
+
 # Done. Write back.
 open("gospels.htm", "w+").write(htm)

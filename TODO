@@ -1,3 +1,7 @@
+install Acrobat trial
+run gospels-1.2.0.pdf through Distiller
+finalize paper
+get dimension sheet
 cover - http://www.swissted.com/ ?
 card
 display
@@ -5,6 +9,7 @@ website
 
 
 ---BUMPED---
+adjust tabs for 3/16" bleed variance -- eff, risk it :-/
 figure out prince licensing
     finance w/ kickstarter?
 true italics for the book/section names in the footer
