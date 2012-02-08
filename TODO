@@ -1,8 +1,5 @@
-install Acrobat trial
-run gospels-1.2.0.pdf through Distiller
 finalize paper
 get dimension sheet
-cover - http://www.swissted.com/ ?
 card
 display
 website
@@ -64,3 +61,6 @@ clean up title page
 fix Luke
 clean up colophon
 clean up copyright page
+install Acrobat trial
+run gospels-1.2.0.pdf through Distiller
+cover - http://www.swissted.com/ ?
