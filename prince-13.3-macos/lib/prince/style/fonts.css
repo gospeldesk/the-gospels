@@ -1,0 +1,134 @@
+/*
+    Prince - Fonts stylesheet
+    https://www.princexml.com
+*/
+
+/* standard "serif" font family */
+
+@font-face {
+    font-family: serif; /* last resort font */
+    src: prince-lookup("Arial Unicode MS")
+}
+
+@font-face {
+    font-family: serif; /* Thai */
+    src: prince-lookup("Thonburi")
+}
+
+@font-face {
+    font-family: serif; /* Tamil */
+    src: prince-lookup("InaiMathi")
+}
+
+@font-face {
+    font-family: serif; /* Gujarati */
+    src: prince-lookup("Gujarati MT")
+}
+
+@font-face {
+    font-family: serif; /* Gurmukhi */
+    src: prince-lookup("Gurmukhi MT")
+}
+
+@font-face {
+    font-family: serif; /* Devanagari / Hindi */
+    src: prince-lookup("Devanagari MT")
+}
+
+@font-face {
+    font-family: serif; /* Korean, fallback */
+    src: prince-lookup("AppleMyungjo")
+}
+
+@font-face {
+    font-family: serif; /* Japanese, fallback */
+    src: prince-lookup("Hiragino Mincho ProN")
+}
+
+@font-face {
+    font-family: serif; /* Chinese */
+    src: prince-lookup("LiSong Pro")
+}
+
+@font-face {
+    font-family: serif; /* Korean */
+    prince-font-lang: ko ko-KR;
+    src: prince-lookup("AppleMyungjo")
+}
+
+@font-face {
+    font-family: serif; /* Japanese */
+    prince-font-lang: ja ja-JP;
+    src: prince-lookup("Hiragino Mincho ProN")
+}
+
+@font-face {
+    font-family: serif; /* Symbols */
+    src: prince-lookup("Symbol")
+}
+
+@font-face {
+    font-family: serif; /* Latin / Greek / Cyrillic */
+    src: prince-lookup("Times New Roman")
+}
+
+/* standard "sans-serif" font family */
+
+@font-face {
+    font-family: sans-serif; /* Korean, fallback */
+    src: prince-lookup("Apple SD Gothic Neo"), prince-lookup("Apple Gothic")
+}
+
+@font-face {
+    font-family: sans-serif; /* Japanese, fallback */
+    src: prince-lookup("Hiragino Kaku Gothic ProN")
+}
+
+@font-face {
+    font-family: sans-serif; /* Chinese */
+    src: prince-lookup("LiHei Pro")
+}
+
+@font-face {
+    font-family: sans-serif; /* Korean */
+    prince-font-lang: ko ko-KR;
+    src: prince-lookup("Apple SD Gothic Neo"), prince-lookup("Apple Gothic")
+}
+
+@font-face {
+    font-family: sans-serif; /* Japanese */
+    prince-font-lang: ja ja-JP;
+    src: prince-lookup("Hiragino Kaku Gothic ProN")
+}
+
+@font-face {
+    font-family: sans-serif; /* Symbols */
+    src: prince-lookup("Symbol")
+}
+
+@font-face {
+    font-family: sans-serif; /* Latin / Greek / Cyrillic */
+    src: prince-lookup("Arial")
+}
+
+/* standard "monospace" font family */
+
+@font-face {
+    font-family: monospace;
+    src: prince-lookup("Courier New")
+}
+
+/* standard "cursive" font family */
+
+@font-face {
+    font-family: cursive;
+    src: prince-lookup("Comic Sans MS")
+}
+
+/* standard "fantasy" font family */
+
+@font-face {
+    font-family: fantasy;
+    src: prince-lookup("Comic Sans MS")
+}
+

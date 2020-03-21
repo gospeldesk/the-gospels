@@ -1,3 +1,4 @@
 #! /bin/sh
-PRINCE="/Users/whit537/personal/gospels/prince-7.1-macosx/lib/prince"
+
+PRINCE="$(pwd)/prince-13.3-macos/lib/prince"
 exec "$PRINCE/bin/prince" --prefix="$PRINCE" "$@"
