@@ -10,9 +10,6 @@ preface.pdf: preface.htm preface.css gospels.css fonts.css
 		--output=preface.pdf \
 		--no-default-style
 
-html: gospels.htm
-	python convert-to-html.py
-
 all.htm: preface.htm gospels.htm
 	cat preface.htm gospels.htm > all.htm
 
@@ -25,3 +22,11 @@ gospels.raw.htm:
 		webhtm/Luke.htm \
 		webhtm/John.htm \
 		> gospels.raw.htm
+
+clean:
+	rm -f \
+		gospels.prince.pdf \
+		preface.pdf \
+		all.htm \
+		gospels.htm \
+		gospels.raw.htm 
