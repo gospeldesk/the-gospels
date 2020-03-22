@@ -10,6 +10,12 @@ preface.pdf: preface.htm preface.css gospels.css fonts.css
 		--output=preface.pdf \
 		--no-default-style
 
+title.pdf: title.htm gospels.css fonts.css
+	./prince title.htm \
+		--style=gospels.css \
+		--output=title.pdf \
+		--no-default-style
+
 all.htm: preface.htm gospels.htm
 	cat preface.htm gospels.htm > all.htm
 
