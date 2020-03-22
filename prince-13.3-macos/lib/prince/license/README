@@ -1,0 +1,4 @@
+I think Prince requires a license.dat file in this directory. I paid for a
+license but am not putting it in Git. The license.dat that they include with
+their free download is in here as free.dat. Rename it to license.dat if you
+need it to run Prince.
