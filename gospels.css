@@ -389,7 +389,36 @@ DD SPAN.chapter, DD SPAN.verse {
     padding: 0;
     text-indent: 0;
     text-align: left;
+    font-variant: prince-opentype(ccmp, liga, onum);
 }
+#copyright TABLE {
+    margin: 0 0 2em 0;
+}
+
+/* HACK table column widths are borked under Prince 13 */
+#copyright TH,
+#copyright TD {
+  padding: 0;
+  text-align: left;
+}
+#copyright TH.one,
+#copyright TD.one {
+    width: 0.4in;
+}
+#copyright TD.one {
+  padding-left: 6pt;
+}
+#copyright TH.two,
+#copyright TD.two {
+    width: 0.5in;
+    text-align: center;
+}
+#copyright TH.three,
+#copyright TD.three {
+    width: 0.75in;
+}
+/* END HACK */
+
 I {
     font-style: italic;
 }
