@@ -201,7 +201,7 @@ SPAN.tab-chapter {
     padding: 0.5pt 0;
     background: white; 
     text-align: right;
-    ont-variant: prince-opentype(onum);
+    ont-variant: prince-opentype(ccmp, liga, onum);
 }
 
 DIV.section {
@@ -418,7 +418,7 @@ TH.time {
 }
 TD {
     display: table-cell;
-    font-variant: prince-opentype(onum);
+    font-variant: prince-opentype(ccmp, liga, onum);
 }
 TD.distance {
     white-space: nowrap;
