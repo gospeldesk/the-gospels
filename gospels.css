@@ -19,30 +19,30 @@
 /* ======= */
 
 @page Preface:left {
-    @bottom-left { 
+    @bottom-left {
         content: counter(page, lower-roman);
         font: normal 8pt/8pt "Adobe Caslon Pro";
     }
 }
 @page Preface:right {
-    @bottom-right { 
+    @bottom-right {
         content: counter(page, lower-roman);
         font: normal 8pt/8pt "Adobe Caslon Pro";
     }
 }
 @page Preface:first {
-    @bottom-left { 
-        background: red ! important; 
+    @bottom-left {
+        background: red ! important;
     }
 }
-#Preface { 
-    counter-reset: page 1; 
+#Preface {
+    counter-reset: page 1;
 }
 #Preface { page: Preface; }
 
 #order {
     text-align: left;
-    margin: 1em 2em 1em 1em; 
+    margin: 1em 2em 1em 1em;
 }
 #order .number {
     text-align: right;
@@ -61,7 +61,7 @@
 #Preface UL {
     display: block;
     margin: 1em 0 1em;
-    
+
 }
 #Preface LI {
     display: list-item;
@@ -106,7 +106,7 @@
 
 
 .Tab SPAN {
-    display: block; 
+    display: block;
     position: absolute;
     width: 0.375in;
     right: -1.125in;
@@ -117,7 +117,7 @@
 
 .TabHack SPAN {
     /* This covers up the numbers on left pages. */
-    display: block; 
+    display: block;
     margin: 0;
     padding: 0;
     background: white;
@@ -199,7 +199,7 @@ SPAN.tab-chapter {
     height: 8pt;
     width: 0.25in;
     padding: 0.5pt 0;
-    background: white; 
+    background: white;
     text-align: right;
     ont-variant: prince-opentype(ccmp, liga, onum);
 }
@@ -248,7 +248,7 @@ DL {
     margin: 0;
     padding: 1em 2em;
     display: block;
-    /* font-style: italic; 
+    /* font-style: italic;
         -- considered it, under the influence of Bringhurst. */
 }
 DT {
@@ -260,7 +260,7 @@ DT {
     /* But it breaks Matthew 2 */
     /*
     padding: 0 0 0 2em;
-    text-indent: -2em;  
+    text-indent: -2em;
     */
 }
 DD {
@@ -321,37 +321,37 @@ DD SPAN.chapter, DD SPAN.verse {
 }
 
 
-/* Adjust some verse numbers in the face of drop caps. 
-   These vary with the width of the first letter. I started with 
+/* Adjust some verse numbers in the face of drop caps.
+   These vary with the width of the first letter. I started with
     0.65in + (2em @ 10pt) == -1.02674in
-   and totally did it manually from there (I held up a piece of paper against 
+   and totally did it manually from there (I held up a piece of paper against
    the screen as a straightedge).
  */
 
-#Matthew .v20-18,   /* A */ 
-#John .v5-2         /* A */ 
-{ margin-inside: -1.085in; } 
+#Matthew .v20-18,   /* A */
+#John .v5-2         /* A */
+{ margin-inside: -1.085in; }
 
-#Matthew .v3-2,     /* I */ 
-#Luke .v6-13,       /* I */ 
-#Luke .v9-52,       /* I */ 
-#John .v1-2         /* I */ 
-{ margin-inside: -0.9555in; } 
+#Matthew .v3-2,     /* I */
+#Luke .v6-13,       /* I */
+#Luke .v9-52,       /* I */
+#John .v1-2         /* I */
+{ margin-inside: -0.9555in; }
 
-#Matthew .v4-13,    /* N */ 
-#Matthew .v11-3,    /* N */ 
-#Matthew .v26-7,    /* N */ 
-#Luke .v22-2        /* N */ 
+#Matthew .v4-13,    /* N */
+#Matthew .v11-3,    /* N */
+#Matthew .v26-7,    /* N */
+#Luke .v22-2        /* N */
 { margin-inside: -1.103in; }
 
-#Luke .v1-2         /* S */ 
+#Luke .v1-2         /* S */
 { margin-inside: -1.0155in; }
 
-#Mark .v1-2,        /* T */ 
-#Matthew .v1-2      /* T */ 
+#Mark .v1-2,        /* T */
+#Matthew .v1-2      /* T */
 { margin-inside: -1.0725in; }
 
-#Matthew .v17-15    /* W */ 
+#Matthew .v17-15    /* W */
 { margin-inside: -1.1895in; }
 
 
