@@ -373,6 +373,9 @@ DD SPAN.chapter, DD SPAN.verse {
     margin: 2em 0;
     padding: 0;
 }
+#title-page .smaller {
+    font-size: smaller;
+}
 #dedication {
     font-variant: small-caps;
     page-break-before: always;
@@ -418,6 +421,21 @@ DD SPAN.chapter, DD SPAN.verse {
     width: 0.75in;
 }
 /* END HACK */
+
+#bio-page {
+    text-align: center;
+    font-size: smaller;
+}
+#bio-page P {
+    margin: 0 0 2em;
+    padding: 0;
+    text-indent: 0;
+    text-align: left;
+    font-variant: prince-opentype(ccmp, liga, onum);
+}
+#bio-page EM {
+    font-variant: small-caps;
+}
 
 I {
     font-style: italic;
