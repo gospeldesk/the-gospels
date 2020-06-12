@@ -391,7 +391,7 @@ DD SPAN.chapter, DD SPAN.verse {
     margin: 0 0 2em;
     padding: 0;
     text-indent: 0;
-    text-align: left;
+    text-align: justify;
     font-variant: prince-opentype(ccmp, liga, onum);
 }
 #copyright TABLE {
@@ -430,7 +430,7 @@ DD SPAN.chapter, DD SPAN.verse {
     margin: 0 0 2em;
     padding: 0;
     text-indent: 0;
-    text-align: left;
+    text-align: justify;
     font-variant: prince-opentype(ccmp, liga, onum);
 }
 #bio-page EM {
